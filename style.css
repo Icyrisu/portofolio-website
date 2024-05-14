@@ -179,7 +179,7 @@ nav ul li a {
 .home-box a:hover {
     background-color: var(--color-one);
     color: var(--color-two);
-    box-shadow: 0px 0px var(--color-one);
+    box-shadow: none;
 }
 
 /* ABOUT */
@@ -271,6 +271,34 @@ nav ul li a {
     list-style: star;
 }
 
+.bot {
+    padding: 0 16vw;
+    margin-bottom: 10vh;
+}
+
+.org h3 {
+    padding: 10px 0;
+}
+.org h4 {
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-two);
+    padding: 5px 0;
+}
+
+@counter-style star {
+    system: cyclic;
+    symbols: "✦";
+    suffix:' ';
+}
+
+.org-list li{
+    font-weight: 500;
+    margin-left: 40px;
+    list-style-position: outside;
+    list-style: star;
+}
+
 /* PROJECT */
 #skill {
     background-color: var(--color-three);
@@ -326,6 +354,10 @@ nav ul li a {
     }
 
     .mid {
+        padding: 0 10vw;
+    }
+
+    .bot {
         padding: 0 10vw;
     }
 }
