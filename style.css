@@ -333,16 +333,13 @@ nav ul li a {
     align-items: center;
     justify-content: flex-start;
     gap: 3vw;
+    margin-left: 40px;
 }
 
 .tec img {
     width: 8vw;
     transition: 0.3s ease;
     filter: grayscale(100%) drop-shadow(5px 5px var(--color-one));
-}
-
-.tec img:first-child {
-    margin-left: 40px;
 }
 
 .tec img:hover {
@@ -356,16 +353,13 @@ nav ul li a {
     align-items: center;
     justify-content: flex-start;
     gap: 3vw;
+    margin-left: 40px;
 }
 
 .pro img {
     width: 8vw;
     transition: 0.3s ease;
     filter: grayscale(100%) drop-shadow(5px 5px var(--color-one));
-}
-
-.pro img:first-child {
-    margin-left: 40px;
 }
 
 .pro img:hover {
@@ -382,7 +376,7 @@ nav ul li a {
 
 /* PROJECT */
 #project {
-    background-color: var(--color-three);
+    background-color: var(--color-four);
     height: 100vh;
 }
 
@@ -437,6 +431,15 @@ nav ul li a {
     }
 
     #skill {
-        padding: 10vh 8vw;
+        padding: 8vh 8vw;
     }
+
+    .tec img {
+        width: 12vw;
+    }
+
+    .pro img {
+        width: 12vw;
+    }
+
 }
