@@ -44,6 +44,7 @@ nav {
     height: 8vh;
     width: 90%;
     position: fixed;
+    z-index: 1000;
 }
 
 .logo h3 {
@@ -239,7 +240,7 @@ nav ul li a {
     align-items: center;
 }
 
-.right h3 {
+.right h4 {
     text-align: justify;
     font-weight: 400;
 }
@@ -299,13 +300,87 @@ nav ul li a {
     list-style: star;
 }
 
-/* PROJECT */
+/* SKILL */
 #skill {
-    background-color: var(--color-three);
-    height: 100vh;
+    background-color: var(--color-four);
+    padding: 10vh 16vw;
 }
 
-/* CONTACT */
+#skill h2 {
+    text-align: center;
+    color: var(--color-two);
+    padding: 10px 0;
+}
+
+#skill span {
+    color: var(--color-one);
+}
+
+#skill h4 {
+    padding: 12px 0;
+    font-style: italic;
+    color: var(--color-two);
+    font-weight: 400;
+}
+
+#skill span {
+    color: var(--color-one);
+}
+
+.tec {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+.tec img {
+    width: 8vw;
+    transition: 0.3s ease;
+    filter: grayscale(100%) drop-shadow(5px 5px var(--color-one));
+}
+
+.tec img:first-child {
+    margin-left: 40px;
+}
+
+.tec img:hover {
+    transform: translateY(5px);
+    filter: none;
+}
+
+.pro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+.pro img {
+    width: 8vw;
+    transition: 0.3s ease;
+    filter: grayscale(100%) drop-shadow(5px 5px var(--color-one));
+}
+
+.pro img:first-child {
+    margin-left: 40px;
+}
+
+.pro img:hover {
+    transform: translateY(5px);
+    filter: none;
+}
+
+.per li {
+    font-weight: 500;
+    margin-left: 40px;
+    list-style-position: outside;
+    list-style: star;
+}
+
+/* PROJECT */
 #project {
     background-color: var(--color-three);
     height: 100vh;
@@ -359,5 +434,9 @@ nav ul li a {
 
     .bot {
         padding: 0 10vw;
+    }
+
+    #skill {
+        padding: 10vh 8vw;
     }
 }
