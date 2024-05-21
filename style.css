@@ -414,8 +414,8 @@ footer p {
 }
 
 .foot-ima img {
-    width: 3vw;
-    height: 100%;
+    width: 3.5vw;
+    max-height: 100%;
     cursor: pointer;
     filter: grayscale(100%);
 }
