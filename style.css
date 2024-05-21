@@ -7,26 +7,31 @@
 }
 
 :root {
+    font-size: 62.5%;
     --color-one:#050f1d;
     --color-two:#e5a052;
     --color-three:#EADBC8;
     --color-four:#FEFAF6;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 h2 {
-    font-size: calc(23px + 0.390625vw);
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: calc(18px + 0.390625vw);
+    font-size: 2rem;
 }
 
 h4 {
-    font-size: calc(15px + 0.390625vw);
+    font-size: 1.8rem;
 }
 
 p {
-    font-size: calc(14px + 0.390625vw);
+    font-size: 1.6rem;
 }
 
 html, body {
@@ -332,12 +337,12 @@ nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    gap: 3vw;
     margin-left: 40px;
 }
 
 .tec img {
-    width: 8vw;
+    height: 10vh;
+    padding: 20px;
     transition: 0.3s ease;
     filter: grayscale(100%) drop-shadow(5px 5px var(--color-one));
 }
@@ -352,12 +357,12 @@ nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    gap: 3vw;
     margin-left: 40px;
 }
 
 .pro img {
-    width: 8vw;
+    height: 10vh;
+    padding: 20px;
     transition: 0.3s ease;
     filter: grayscale(100%) drop-shadow(5px 5px var(--color-one));
 }
@@ -378,6 +383,45 @@ nav ul li a {
 #project {
     background-color: var(--color-four);
     height: 100vh;
+}
+
+/* FOOTER */
+footer {
+    padding: 2vh 5vw;
+    background-color: var(--color-one);
+}
+
+footer h3 {
+    text-align: center;
+    color: var(--color-two);
+}
+
+footer span {
+    color: var(--color-four);
+}
+
+footer p {
+    text-align: center;
+    color: var(--color-four);
+}
+
+.foot-ima {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 4vh 16vw;
+    gap: 5vw;
+}
+
+.foot-ima img {
+    width: 3vw;
+    height: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.foot-ima img:hover {
+    filter: none;
 }
 
 /* BREAK POINT */
@@ -435,11 +479,15 @@ nav ul li a {
     }
 
     .tec img {
-        width: 12vw;
+        height: 6vh;
     }
 
     .pro img {
-        width: 12vw;
+        height: 6vh;
+    }
+
+    .foot-ima img {
+        width: 9vw;
     }
 
 }
