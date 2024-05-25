@@ -14,6 +14,19 @@
     --color-four:#FEFAF6;
 }
 
+::-webkit-scrollbar {
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-one);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-two);
+    border-radius: 20px;
+}
+
 h1 {
     font-size: 2.5rem;
 }
