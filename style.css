@@ -429,7 +429,18 @@ nav ul li a {
 /* PROJECT */
 #project {
     background-color: var(--color-four);
+    padding: 10vh 16vw;
     height: 100vh;
+}
+
+#project h2 {
+    text-align: center;
+    color: var(--color-two);
+    padding: 10px 0;
+}
+
+#project span {
+    color: var(--color-one);
 }
 
 /* FOOTER */
@@ -531,6 +542,10 @@ footer p {
 
     .pro img {
         height: 6vh;
+    }
+
+    .certif img {
+        width: 60vw;
     }
 
     .foot-ima img {
