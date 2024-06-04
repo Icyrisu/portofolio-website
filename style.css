@@ -392,6 +392,40 @@ nav ul li a {
     list-style: star;
 }
 
+/* CERTIFICATE */
+.certif img {
+    width: 40vw;
+    border-radius: 20px;
+    border: 3px solid var(--color-one);
+    box-shadow: 10px 10px var(--color-one);
+}
+
+.revou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 8vh;
+    padding-top: 2vh;
+}
+
+.revou-p {
+    padding-top: 3vh;
+}
+
+.plc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.plc-p {
+    padding-top: 3vh;
+}
+
 /* PROJECT */
 #project {
     background-color: var(--color-four);
