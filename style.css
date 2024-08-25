@@ -568,14 +568,19 @@ footer p {
     .certif img {
         width: 60vw;
     }
-
-    .foot-ima img {
-        width: 9vw;
-    }
-
+    
     .project-box {
         flex-direction: column;
         gap: 10vh;
     }
+
+    .project-box img {
+        width: 60vw;
+    }
+    
+    .foot-ima img {
+        width: 9vw;
+    }
+
 
 }
