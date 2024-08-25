@@ -576,6 +576,7 @@ footer p {
 
     .project-box img {
         height: 40vh;
+        width: auto;
     }
 
     .foot-ima img {
