@@ -430,7 +430,7 @@ nav ul li a {
 #project {
     background-color: var(--color-four);
     padding: 10vh 16vw;
-    height: 100vh;
+    margin-bottom: 2vh;
 }
 
 #project h2 {
@@ -571,6 +571,11 @@ footer p {
 
     .foot-ima img {
         width: 9vw;
+    }
+
+    .project-box {
+        flex-direction: column;
+        gap: 10vh;
     }
 
 }
