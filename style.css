@@ -257,13 +257,22 @@ nav.nav-scrolled .menu span {
 }
 
 .hero-title-new {
-    font-size: 6rem;
-    font-weight: 500;
+    font-size: 9rem;
+    font-weight: 700;
     color: white;
     font-family: 'Pixelify Sans', sans-serif;
     letter-spacing: 2px;
     margin: 0;
     line-height: 1;
+}
+
+.pixel-smile-icon {
+    display: inline-block;
+    height: 0.72em; /* Match letter height precisely */
+    width: auto;
+    vertical-align: -0.08em;
+    fill: currentColor;
+    margin: 0 1px;
 }
 
 .mobile-title {
@@ -681,19 +690,48 @@ footer p {
     transition: transform 0.15s ease, box-shadow 0.15s ease !important;
 }
 
-/* RESPONSIVE FIXES */
-@media screen and (max-width: 992px) {
-    .intro-grid {
-        grid-template-columns: 1fr;
+/* TABLET LAYOUT (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .bento-section {
+        padding: 80px 5%; /* Reduce horizontal padding */
     }
+    .bento-grid {
+        grid-template-columns: 1fr; /* Stack Profile and Intro */
+    }
+    /* Fix Profile image text overlap for Tablet/Mobile */
     .profile-card {
-        min-height: 400px;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-card .bg-img {
+        position: relative;
+        height: 400px;
+        object-position: center 15%; /* Focus on the face */
+    }
+    .profile-card .overlay {
+        position: relative;
+        background: var(--card-dark-bg);
+        border-top: 3px solid #000;
     }
     .resume-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; /* 2 columns for resume */
     }
-    .hero-title {
+    .resume-grid .resume-col:last-child {
+        grid-column: span 2; /* Make the 3rd column span full width on tablet */
+    }
+    .hero-title-new {
         font-size: 5rem;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 5px;
+    }
+    .project-card {
+        flex: 0 0 320px;
     }
 }
 
@@ -761,8 +799,35 @@ footer p {
     }
     
     .hero-title-new {
-        font-size: 6.5rem; /* Massive size for POR TFO LIO */
-        line-height: 0.85;
+        font-size: 5rem;
+        line-height: 0.9;
+        letter-spacing: 1px;
+    }
+    .pixel-smile-icon {
+        height: 0.68em;
+        width: 1ch; /* Match exact character width for perfect column alignment */
+        vertical-align: -0.05em;
+    }
+    .mobile-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1.1em); /* Each slot is same fixed width */
+        line-height: 0.9;
+        align-items: center;
+    }
+    .hero-char {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.1em;
+    }
+    .pixel-smile-icon.hero-char {
+        height: 0.68em;
+        width: 1.1em;
     }
     .desktop-title {
         display: none;
@@ -790,6 +855,9 @@ footer p {
     .resume-grid {
         grid-template-columns: 1fr;
     }
+    .resume-grid .resume-col:last-child {
+        grid-column: auto; /* Reset the span 2 from tablet */
+    }
     
     .social-grid {
         grid-template-columns: repeat(4, 1fr); /* Keep 4 columns so they remain small buttons */
@@ -809,20 +877,11 @@ footer p {
         margin-top: 10px;
     }
     
-    /* Fix Profile image text overlap */
-    .profile-card {
-        min-height: auto;
-        display: flex;
-        flex-direction: column;
-    }
     .profile-card .bg-img {
-        position: relative;
-        height: 300px;
+        height: 300px; /* Smaller image on mobile */
     }
     .profile-card .overlay {
-        position: relative;
-        background: var(--card-dark-bg);
-        border-top: none;
+        border-top: none; /* Adjust border if needed */
     }
     .profile-card .main-title {
         font-size: 2rem;
