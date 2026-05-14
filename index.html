@@ -6,180 +6,306 @@
     <title>Muhammad Kholish | UMJ</title>
     <link rel="icon" href="/assets/image/icon.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Using Inter and Pixelify Sans fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- NAVBAR -->
     <nav>
         <div class="logo">
             <a href="#">
-                <h3><<span>KHOLISH</span>/></h3>
+                <h3>KHOLISH</h3>
             </a>
         </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#project">Project</a></li>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#work">Work</a></li>
         </ul>
         <div class="menu">
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="menu-toggle">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </nav>
     
-    <!-- HOME -->
-    <section id="home">
-        <div class="home-box">
-            <img src="/assets/image/icon.gif" alt="avatar">
-            <h3>Hello! I'm</h3>
-            <h2><<span>Muhammad Kholish</span>/></h2>
-            <p><i>Embedded System Engineer</i> at Jago Otomasi</p>
-            <div class="download">
-                <a href="/assets/file/CV MUHAMMAD KHOLISH.pdf" download>Download CV</a>
-            </div>
-        </div>
-    </section>
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="about-box">
-            <div class="top">
-                <div class="first">
-                    <h2><<span>About</span>/></h2>
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-dark fade-in-section">
+            <div class="hero-content">
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-title-new">
+                        <span class="desktop-title">PORTFOLIO</span>
+                        <span class="mobile-title">POR<br>TFO<br>LIO</span>
+                    </h1>
                 </div>
-                <div class="second">
-                    <div class="left">
-                        <img src="assets/image/profile.png" alt="profile">
-                    </div>
-                    <div class="right">
-                        <h4><b>Bachelor of Electrical Engineering</b> who has a high curiosity about electronics. Always trying new things, critical thinking, and fast learner. I've done some Arduino projects and have a little understanding of Python, HTML, and CSS.</h4>
-                    </div>
+                <div class="hero-tags-new">
+                    <span class="pill pill-light">#Arduino</span>
+                    <span class="pill pill-blue">#ESP32</span>
+                    <span class="pill pill-dark">#HMI</span>
+                    <span class="pill pill-light">#IoT</span>
+                    <span class="pill pill-blue">#Modbus</span>
+                    <span class="pill pill-dark">#PLC</span>
                 </div>
             </div>
-            <!-- EDUCATION -->
-            <div class="mid">
-                <h2><<span>Education</span>/></h2>
-                <ul class="edu">
-                    <div class="line"></div>
-                    <li><h3>Universitas Muhammadiyah Jakarta</h3></li>
-                    <h4>{ <span>Sep 2021 - Aug 2025</span> }</h4>
-                    <ul class="edu-list">
-                        <li><p>Electrical Engineering</p></li>
-                        <li><p>GPA: 3.69</p></li>
-                    </ul>
-                    <li><h3>SMAN 12 Bekasi</h3></li>
-                    <h4>{ <span>Jul 2018 - May 2021</span> }</h4>
-                    <ul class="edu-list">
-                        <li><p>Science</p></li>
-                    </ul>
-                </ul>
-            </div>
-            <!-- ORGANIZATION EXPERIENCE -->
-            <div class="bot">
-                <h2><<span>Organization Experience</span>/></h2>
-                <ul class="org">
-                    <li><h3>Ikatan Mahasiswa Muhammadiyah</h3></li>
-                    <h4>{ <span>Jan 2023 - Des 2023</span> }</h4>
-                    <ul class="org-list">
-                        <li><p>Staff of Media and Documentation</p></li>
-                    <h4>{ <span>Mar 2022 - Apr 2022</span> }</h4>
-                    <ul class="org-list">
-                        <li><p>Decoration and Documentation Division Coordinator</p></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- SKILL -->
-    <section id="skill">
-        <h2><<span>Skill</span>/></h2>
-        <!-- PERSONAL -->
-        <div class="skill-per">
-            <h4>{ <span>Personal Skill</span> }</h4>
-            <div class="per">
-                <ul>
-                    <li><p>Adaptability</p></li>
-                    <li><p>Computer skills</p></li>
-                    <li><p>Critical thinking</p></li>
-                    <li><p>Fast learner</p></li>
-                    <li><p>Problem solving</p></li>
-                </ul>
-            </div>
-        </div>
-        <!-- TECHNICAL -->
-        <div class="skill-tec">
-            <h4>{ <span>Tools</span> }</h4>
-            <div class="tec">
-                <img src="/assets/image/arduino.png" alt="Arduino IDE" title="Arduino IDE">
-                <img src="/assets/image/fritzing.png" alt="Fritzing" title="Fritzing">
-                <img src="/assets/image/vscode.png" alt="VSCode" title="VSCode">
-                <img src="/assets/image/word.png" alt="Word" title="Word">
-                <img src="/assets/image/powerpoint.png" alt="Powerpoint" title="Powerpoint">
-                <img src="/assets/image/excel.png" alt="Excel" title="Excel">
-            </div>
-        </div>
-        <!-- PROGRAMMING -->
-        <div class="skill-pro">
-            <h4>{ <span>Programming</span> }</h4>
-            <div class="pro">
-                <img src="/assets/image/html.png" alt="HTML" title="HTML">
-                <img src="/assets/image/css.png" alt="CSS" title="CSS">
-                <img src="/assets/image/python.png" alt="Python" title="Python">
+        </section>
 
+        <!-- ABOUT / INTRO SECTION -->
+        <section id="about" class="bento-section pt-zero">
+            <div class="bento-grid intro-grid">
+                <!-- Large Profile Card -->
+                <div class="card profile-card fade-in-section">
+                    <img src="assets/image/profile.png" alt="Profile" class="bg-img" onerror="this.src='https://placehold.co/600x800/222222/ffffff?text=Profile'">
+                    <div class="overlay">
+                        <p class="greeting">Hello, I'm</p>
+                        <h1 class="main-title">Muhammad<br>Kholish</h1>
+                        <p class="tagline">Trainer & Engineer at JAGO OTOMASI</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="intro-right">
+                    <!-- Introduction Card -->
+                    <div class="card intro-card p-standard fade-in-section">
+                        <div class="card-header">
+                            <h2>Introduction</h2>
+                        </div>
+                        <div class="card-content intro-content">
+                            <div class="intro-text-box">
+                                <p>Bachelor of Electrical Engineering with a high curiosity about electronics. Always trying new things, critical thinking, and fast learner. I've done Arduino projects and have understanding of Python, HTML, and CSS.</p>
+                            </div>
+                            <div class="intro-avatar">
+                                <img src="/assets/image/icon.png" alt="Avatar" onerror="this.src='https://placehold.co/100/eeeeee/999999?text=Avatar'">
+                            </div>
+                        </div>
+                        
+                        <!-- Download CV Moved Here -->
+                        <div class="mt-md">
+                            <a href="/assets/file/CV MUHAMMAD KHOLISH.pdf" class="btn-primary" download>
+                                Download CV
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Get In Touch Card -->
+                    <div class="card get-in-touch-card p-standard fade-in-section">
+                        <div class="card-header">
+                            <h2>Get In Touch</h2>
+                        </div>
+                        <div class="social-grid">
+                            <a href="mailto:kholish2511@gmail.com" target="_blank" class="social-box dark-box">
+                                <div class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhammad-kholish-8a0a2a2a7/" target="_blank" class="social-box blue-box">
+                                <div class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Icyrisu" target="_blank" class="social-box light-box">
+                                <div class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/ri.su___/" target="_blank" class="social-box outline-box">
+                                <div class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- CERTIFICATE -->
-        <div class="certif">
-            <h4>{ <span>Certificate</span> }</h4>
-            <div class="revou">
-                <div class="revou-img">
-                    <img src="/assets/image/RevoU.jpg" alt="RevoU">
+        </section>
+
+        <!-- RESUME SECTION -->
+        <section id="resume" class="bento-section pt-zero">
+            <div class="bento-grid resume-grid">
+                <!-- Column 1: Experience -->
+                <div class="resume-col fade-in-section">
+                    <div class="section-title">
+                        <h2>Experience</h2>
+                    </div>
+                    <div class="card list-card p-standard">
+                        <div class="list-item">
+                            <span class="date-badge blue">Oct 2025 - Present</span>
+                            <h3>Trainer & Engineer</h3>
+                            <p>PT Sinergi Generasi Mandiri</p>
+                        </div>
+                        <div class="list-item">
+                            <p>Jan 2025 - Sep 2025</p>
+                            <h3>Freelance Technician</h3>
+                        </div>
+                        <div class="list-item">
+                            <p>Sep 2024 - Des 2024</p>
+                            <h3>Technical Demonstration Assistant (Intern)</h3>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="list-item">
+                            <span class="date-badge blue">Jan 2023 - Des 2023</span>
+                            <h3>Staff of Media & Doc.</h3>
+                            <p>Ikatan Mahasiswa Muhammadiyah</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="list-item">
+                            <span class="date-badge blue">Mar 2022 - Apr 2022</span>
+                            <h3>Decoration & Doc. Coordinator</h3>
+                            <p>Ikatan Mahasiswa Muhammadiyah</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="revou-p">
-                    <p>RevoU Fundamental Course<br>(Software Engineering)</p>
+
+                <!-- Column 2: Expertise -->
+                <div class="resume-col fade-in-section">
+                    <div class="section-title">
+                        <h2>Expertise</h2>
+                    </div>
+                    
+                    <div class="card expertise-card p-standard">
+                        <h3>Tools & Programming</h3>
+                        <div class="tag-cloud">
+                            <span class="tag">#Arduino_IDE</span>
+                            <span class="tag">#PlatformIO</span>
+                            <span class="tag">#VSCode</span>
+                            <span class="tag">#Fritzing</span>
+                            <span class="tag">#AutoCad</span>
+                            <span class="tag">#Wokwi</span>
+                        </div>
+                        
+                        <h3 class="mt-md">Softskills</h3>
+                        <div class="tag-cloud">
+                            <span class="tag">#Adaptability</span>
+                            <span class="tag">#Problem_Solving</span>
+                            <span class="tag">#Critical_Thinking</span>
+                            <span class="tag">#Fast_Learner</span>
+                            <span class="tag">#Computer_Skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Education & Certificates -->
+                <div class="resume-col fade-in-section">
+                    <div class="section-title">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="card list-card dark-card p-standard">
+                        <div class="list-item">
+                            <span class="date-badge light">Sep 2021 - Aug 2025</span>
+                            <h3>University of Muhammadiyah Jakarta</h3>
+                            <p>Electrical Engineering (GPA: 3.69)</p><br>
+                            <p>Thesis: Development of an Energy-Efficient Smart Building Monitoring and Control Prototype Using Real-Time Web-Based MQTT Protocol</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card list-card dark-card p-standard mt-md">
+                        <div class="list-item">
+                            <span class="date-badge light">2018 - 2021</span>
+                            <h3>SMAN 12 Bekasi</h3>
+                            <p>Science (Grade: Average 87)</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="plc">
-                <div class="plc-img">
-                    <img src="/assets/image/NPH.jpg" alt="Certificate NPG">
+        </section>
+
+        <!-- CERTIFICATES SECTION -->
+        <section id="certificates" class="bento-section pt-zero">
+             <div class="section-title fade-in-section">
+                <h2>Certificates</h2>
+            </div>
+            <div class="project-carousel mt-md fade-in-section">
+                <div class="card project-card cert-carousel-card">
+                    <div class="project-img-wrapper">
+                        <img src="/assets/image/RevoU.jpg" alt="RevoU" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Certificate'">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-text">
+                            <h3>RevoU Fundamental Course</h3>
+                            <p>Software Engineering</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="plc-p">
-                    <p>NPH PLC Training</p>
+                <div class="card project-card cert-carousel-card">
+                    <div class="project-img-wrapper">
+                        <img src="/assets/image/NPH.jpg" alt="NPH PLC" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Certificate'">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-text">
+                            <h3>NPH PLC Training</h3>
+                            <p>Programmable Logic Controller</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- PROJECT -->
-    <section id="project">
-        <h2><<span>Project</span>/></h2>
-        <div class="project-box">
-            <img src="/assets/image/dht.png" alt="Monitoring Temperature and Humidity">
-            <img src="/assets/image/soil.png" alt="Automatic Watering System">
-            <img src="/assets/image/hcsr.png" alt="Water Level Indicator">
-        </div>
-        
-    </section>
+        </section>
+
+        <!-- WORK / PROJECT SECTION -->
+        <section id="work" class="bento-section pt-zero">
+             <div class="section-title fade-in-section">
+                <h2>Work & Projects</h2>
+            </div>
+            <!-- Project Slider Carousel -->
+            <div class="project-carousel mt-md fade-in-section">
+                <a href="#" class="card project-card">
+                    <div class="project-img-wrapper">
+                        <img src="/assets/image/dht.png" alt="Monitoring Temperature and Humidity" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Project+1'">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-text">
+                            <h3>Monitoring Temperature and Humidity</h3>
+                            <p>Arduino UNO</p>
+                        </div>
+                        <div class="project-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="card project-card">
+                    <div class="project-img-wrapper">
+                        <img src="/assets/image/soil.png" alt="Automatic Watering System" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Project+2'">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-text">
+                            <h3>Automatic Watering System</h3>
+                            <p>Arduino Mega 2560</p>
+                        </div>
+                        <div class="project-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="card project-card">
+                    <div class="project-img-wrapper">
+                        <img src="/assets/image/hcsr.png" alt="Water Level Indicator" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Project+3'">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-text">
+                            <h3>Water Level Indicator</h3>
+                            <p>Arduino UNO</p>
+                        </div>
+                        <div class="project-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
         <div class="foot">
-            <h3><<span>Contact</span>/></h3>
-            <div class="foot-ima">
-                <a href="https://www.linkedin.com/in/muhammad-kholish-8a0a2a2a7/" target="_blank">
-                    <img src="/assets/image/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="mailto:kholish2511@gmail.com" target="_blank">
-                    <img src="/assets/image/mail.png" alt="Email">
-                </a>
-                <a href="https://github.com/Icyrisu" target="_blank">
-                    <img src="/assets/image/github.png" alt="Github">
-                </a>
-                <a href="https://www.instagram.com/ri.su___/" target="_blank">
-                    <img src="/assets/image/instagram.png" alt="Instagram">
-                </a>
-            </div>
-            <p>Muhammad Kholish - 2025</p>
+            <p> Muhammad Kholish &copy; <span id="current-year"></span></p>
         </div>
     </footer>
 
