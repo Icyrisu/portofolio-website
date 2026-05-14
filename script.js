@@ -34,10 +34,10 @@ const appearOptions = {
 
 const appearOnScroll = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            entry.target.classList.remove('is-visible');
-        } else {
+        if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
+            // Unobserve to prevent any flickering once the animation has played
+            observer.unobserve(entry.target);
         }
     });
 }, appearOptions);

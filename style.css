@@ -390,7 +390,6 @@ nav.nav-scrolled .menu span {
     height: auto;
     border: 2px solid #000;
     border-radius: 50%;
-    box-shadow: 4px 4px 0 #000;
 }
 
 /* SOCIAL CARDS */
@@ -668,6 +667,10 @@ footer p {
 .fade-in-section.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+.fade-in-section.passed {
+    opacity: 0;
+    transform: translateY(-40px);
 }
 
 /* Fix CSS transition conflict for cards */
